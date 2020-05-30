@@ -1,0 +1,87 @@
+.ptask-container{
+    position: relative;
+    height: 150px;
+    width: 99%;
+    border-radius: 3px;
+    top: 0px;
+    
+     background-color: white;
+     
+    margin-bottom: 20px;
+    padding: 1px;
+    transition: 0.2s;
+}
+
+.ptask-container:hover{
+
+    top: -10px;
+    cursor: pointer;
+}
+
+.todo-item-sidebar{
+    position: relative;
+    
+    float: left;
+    width: 5px;
+    background-color: #0077FF;
+    height: 100%;
+    margin-right: 10px;
+    border-radius: 3px;
+}
+
+.todo-selector{
+    position: relative;
+    float: left;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    border: 1px solid rgba(44, 44, 44,0.6);
+    margin-top: 20px;
+  
+
+}
+
+.task-information{
+    position: relative;
+    
+    width: 85%;
+    float: right;
+}
+.todo-title{
+    position: relative;
+    margin-top: 17px;
+    font-weight: bold;
+    font-family:'Open Sans';
+   
+}
+
+.todo-description{
+    margin-top: 10px;
+   
+    width: 90%;
+    color: gray;
+    font-size: 14px;
+
+}
+.todo-category{
+    position: relative;
+   
+    background-color: #0077FF;
+   padding-top: 4px;
+   padding-bottom: 4px;
+   padding-left: 9px;
+   padding-right: 15px;
+    width: 100px;
+    border-radius: 3px;
+    color: white;
+    font-family: Poppins;
+    text-align: center;
+    margin-top: 15px;
+    float: left;
+}
+
+.todo-time{
+    float: right;
+    margin-right: 40px;
+    margin-top: 20px;
+}
