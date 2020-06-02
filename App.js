@@ -10,7 +10,17 @@ function App() {
 
   let data = JSON.parse(localStorage.getItem('projects'));
 
-  const [projectView, setProjectView] = useState(0);
+  const [projectState, setProjectState] = useState(0);
+  const [projectData, setProjectData] = useState(0);
+
+  let passedData;
+
+  function newProjectRender() {
+
+
+
+
+  }
 
 
   function renderProjectView() {
@@ -19,12 +29,16 @@ function App() {
 
 
 
-    if (projectView >= 1) {
+    if (projectState >= 1) {
+      let viewing;
+      let i;
+      for (i = 0; i < data.length; i++) {
+        if (data[i].projectID === projectData) {
+          viewing = <Project closeHandler={changeViewHandler} projectData={data[i]} />
+        }
+      }
 
-
-
-
-      return <Project closeHandler={changeViewHandler} projectID={projectView} projectData={data[projectView - 1]} />
+      return viewing;
     }
     else {
       return null;
@@ -34,23 +48,23 @@ function App() {
   function changeViewHandler(choice) {
 
     if (choice >= 1) {
-      setProjectView(choice)
+      setProjectState(choice);
+      setProjectData(choice);
     }
     else if (choice === 0) {
 
-      setProjectView(0);
+      setProjectState(0);
+      setProjectData(0)
 
     }
 
-    console.log(choice);
+
 
 
 
   }
 
-  function otherChange() {
-    setProjectView(1)
-  }
+
 
 
   return (

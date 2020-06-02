@@ -12,10 +12,6 @@ const Project = (props) => {
         props.closeHandler(0)
     }
 
-    function theTest() {
-        console.log(props.projectData.projectTitle)
-    }
-
 
 
 
@@ -32,7 +28,7 @@ const Project = (props) => {
             <div className="project-views-wrapper">
                 <div className="project-views-container">
 
-                    <ProjectTasks projectTitle={props.projectData.projectTitle} />
+                    <ProjectTasks projectTitle={props.projectData.projectTitle} tasksData={props.projectData} />
                 </div>
             </div>
 

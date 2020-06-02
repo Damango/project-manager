@@ -4,17 +4,18 @@
     width: 99%;
     border-radius: 3px;
     top: 0px;
-    
-     background-color: white;
-     
+    background-color: white;
+    box-shadow: 10px 10px 10px transparent;
     margin-bottom: 20px;
     padding: 1px;
-    transition: 0.2s;
+   
+    transition: 0.1s;
 }
 
 .ptask-container:hover{
 
-    top: -10px;
+    background-color: rgb(238, 238, 238);
+    box-shadow: 1px 1px 10px rgb(163, 163, 163);
     cursor: pointer;
 }
 
@@ -37,8 +38,79 @@
     border-radius: 50%;
     border: 1px solid rgba(44, 44, 44,0.6);
     margin-top: 20px;
-  
+  background-color: white;
+  transition: 0.3s;
 
+}
+
+.task-operator{
+    position: absolute;
+    background-color: white;
+    border: 1px solid rgba(124, 118, 118, 0.431);
+    height: auto;
+    width: 150px;
+    left: 40px;
+    z-index: 3;
+}
+
+
+
+.fas{
+    margin-right: 10px
+}
+
+.far{
+    margin-right: 10px;
+}
+.task-category{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    border-bottom: 1px solid rgba(104, 104, 104, 0.315);
+    font-family: Roboto;
+    font-weight: bold;
+}
+.task-category:hover{
+    border-color: transparent;
+}
+.complete-task{
+    color: #2ecc71;
+    transition: 0.3s;
+}
+.complete-task:hover{
+    background-color: #2ecc71;
+    color: white;
+}
+.in-progress-task{
+    color: #f1c40f;
+    transition: 0.3s;
+}
+.in-progress-task:hover{
+    background-color: #f1c40f;
+    color: white;
+}
+                .stuck-task {
+                    color: #d35400;
+                    transition: 0.3s;
+                }
+
+                .stuck-task:hover{
+                    background-color: #d35400;
+                    color: white;
+                }
+                .delete-task{
+                    color: #e74c3c;
+                    transition: 0.3s;
+                }
+
+                .delete-task:hover{
+                    background-color: #e74c3c;
+                    color: white;
+                }
+
+.todo-selector:hover{
+    background-color: red;
+    cursor: pointer;
 }
 
 .task-information{
@@ -52,12 +124,13 @@
     margin-top: 17px;
     font-weight: bold;
     font-family:'Open Sans';
+    height: 20px;
    
 }
 
 .todo-description{
     margin-top: 10px;
-   
+   height: 40px;
     width: 90%;
     color: gray;
     font-size: 14px;
@@ -70,8 +143,8 @@
    padding-top: 4px;
    padding-bottom: 4px;
    padding-left: 9px;
-   padding-right: 15px;
-    width: 100px;
+   padding-right: 9px;
+    width: auto;
     border-radius: 3px;
     color: white;
     font-family: Poppins;
@@ -85,3 +158,4 @@
     margin-right: 40px;
     margin-top: 20px;
 }
+
