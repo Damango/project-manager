@@ -1,0 +1,57 @@
+.transaction-container{
+    position: relative;
+    background-color: white;
+    width: 200px;
+    height: 50px;
+    padding: 8px;
+    display: inline-block;
+    margin-top: 30px;
+    margin-right: 15px;
+    box-shadow: 1px 3px 5px rgb(160, 160, 160);
+    
+}
+
+.transaction-bar{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 5px;
+}
+
+.bar-positive{
+    background-color: #2ecc71;
+}
+
+.bar-negative{
+    background-color: #d31500;
+}
+
+.transaction-title{
+    margin-left: 5px;
+}
+
+.transaction-date{
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    font-family: Roboto;
+    color: gray;
+}
+
+.transaction-amount{
+    position: absolute;
+    bottom: 8px;
+    right: 8px;
+    font-family: Roboto;
+
+}
+
+
+@media only screen and (max-width: 1150px){
+    .transaction-container{
+        width: 180px;
+
+        
+    }
+}

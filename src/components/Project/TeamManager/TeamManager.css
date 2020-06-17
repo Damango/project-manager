@@ -1,0 +1,122 @@
+.team-manager-container{
+
+    position: relative;
+
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+   
+}
+
+.teams-container{
+    position: relative;
+    margin-top: 80px;
+    display: flex;
+   
+   justify-content: space-between;
+   
+}
+
+.team-container{
+    position: relative;
+  
+    width: 22%;
+    height: 600px;
+    
+    padding: 10px;
+   
+}
+.team-title{
+    position: absolute;
+    top: -40px;
+    font-family: Roboto;
+    font-size: 25px;
+    font-weight: bold;
+    color: rgb(43, 43, 51);
+    padding-bottom: 5px;
+}
+
+
+.developers-t{
+   
+    border-bottom: 2px solid rgb(0, 132, 255);
+}
+
+.designers-t{
+    border-bottom: 2px solid rgb(140, 0, 255);
+}
+
+
+.engineers-t{
+    border-bottom: 2px solid rgb(255, 102, 0);
+}
+
+.admins-t{
+    border-bottom: 2px solid rgb(246, 26, 18);
+}
+
+
+.addMember{
+    position: relative;
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-family: Roboto;
+    font-size: 17px;
+    border-style: none;
+    color: white;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+.add-developer{
+    background-color:rgb(0, 132, 255);
+    transition: 0.3s;
+}
+
+.add-developer:hover{
+    cursor: pointer;
+    background-color:rgb(0, 91, 177);
+}
+
+.add-designer{
+    background-color: rgb(140, 0, 255);
+    transition: 0.3s;
+}
+
+.add-designer:hover{
+    background-color: rgb(79, 0, 144);
+    cursor: pointer;
+}
+
+.add-admin{
+    background-color: rgb(246, 26, 18);
+    transition: 0.3s;
+}
+
+.add-admin:hover{
+    cursor: pointer;
+    background-color: rgb(172, 6, 0);
+}
+
+.add-engineer{
+    background-color: rgb(255, 102, 0);
+    transition: 0.3s;
+}
+
+.add-engineer:hover{
+    background-color: rgb(149, 60, 0);
+    cursor: pointer;
+}
+
+.add-member-container{
+    position: relative;
+
+    width: 100%;
+    height: 100px;
+}
+
+.add-member-option{
+   padding: 15px;
+   background-color: white;
+}

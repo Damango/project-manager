@@ -1,0 +1,48 @@
+.project-manager-container{
+    position: relative;
+
+    width: 100%;
+    
+    height: 100%;
+  overflow-x: hidden;
+
+}
+
+.cards-container{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    width: 93%;
+    height: auto;
+   
+    left: 50.5%;
+    transform: translateX(-50%);
+
+    
+    margin-top: 100px;
+}
+
+.create-project-button{
+    top: -75px;
+    right: 30px;
+    padding: 10px 15px;
+   position: absolute;
+   border-style: none;
+   background-color: #2ecc71;
+   color: white;
+   font-family: 'Open Sans';
+   font-weight: bold;
+   font-size: 17px;
+   transition: 0.3s;
+  
+  
+}
+
+.create-project-button:hover{
+    background-color: #27ae60;
+    cursor: pointer;
+}
+
+.create-project-button:focus{
+   border: none;
+}

@@ -1,0 +1,114 @@
+.member-container{
+    position: relative;
+    background-color: white;
+    font-family: Roboto;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    border: 1px solid rgb(131, 131, 131);
+}
+
+.member-container:hover{
+    cursor: pointer;
+}
+
+.member-container:hover .delete-member-style{
+    opacity: 1;
+    right: 20px;
+}
+
+.member-icon{
+    position: relative;
+    border: 2px solid gray;
+    border-radius: 50%;
+    height: 20px;
+    width: 20px;
+    top: 6px;
+    float: left;
+   margin-right: 15px;
+}
+
+.add-member-icon{
+    position: absolute;
+    right: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: rgb(30, 182, 30);
+    font-size: 25px;
+    transition: 0.3s;
+}
+
+.add-member-icon:hover{
+    cursor: pointer;
+    color: rgb(0, 100, 0);
+}
+
+.delete-member-style{
+    position: absolute;
+    background-color: white;
+    border: 2px solid #e41102;
+    height: 25px;
+    width: 25px;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align:center;
+    transition: 0.3s;
+    opacity: 0;
+    border-radius: 4px;
+}
+
+.fa-user-minus{
+    
+    color: #e41102;
+    position: relative;
+    left: 50%;
+    top: 48%;
+    transform: translate(-50%,-50%);
+    transition: 0.3s;
+}
+
+.delete-member-style:hover{
+    background-color: #e41102;
+    cursor: pointer;
+    
+}
+
+.delete-member-style:hover .fa-user-minus{
+    color: white;
+
+}
+
+.member-role{
+    font-family: 'Open Sans';
+    font-weight: bold;
+    color: rgb(29, 29, 29);
+}
+
+@media only screen and (max-width: 1150px){
+    
+.member-icon{
+
+   margin-bottom: 20px;
+}
+
+.fa-user-minus{
+    
+font-size: 13px;
+}
+
+.member-container{
+  font-size: 14px;
+}
+
+.delete-member-style{
+    right: -20px;
+}
+
+.member-container:hover .delete-member-style{
+    opacity: 1;
+    right: 10px;
+}
+
+
+}

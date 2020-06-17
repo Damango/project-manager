@@ -1,0 +1,394 @@
+.finance-container{
+    position: relative;
+
+    width: 100%;
+    height: 90%;
+    padding: 10px;
+    
+}
+
+
+
+.finance-information-container{
+    position: relative;
+    
+}
+
+.finance-information-settings-button{
+    position: absolute;
+    height: 34px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    top: 20px;
+    right: 20px;
+  
+}
+
+.dot{
+    background-color: gray;
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+}
+
+.balance-details{
+    float: left;
+    height: 400px;
+    width: 430px;
+    margin-top: 40px;
+    padding: 20px;
+    border: 1px solid rgba(0,0,0,0.6);
+    position: relative;
+}
+
+.balance-title{
+    font-size: 20px;
+    font-family: "Open Sans";
+    font-weight: bold;
+}
+
+.total-balance-container{
+    margin-top: 40px;
+}
+
+.total-balance-amount{
+    font-size: 40px;
+    font-family:Roboto;
+    font-weight: bold;
+    color: #2f3640;
+}
+
+.income-expense-container{
+    position: relative;
+    background-color: red;
+    width: 75%;
+    margin-top: 65px;
+}
+
+
+.income-container{
+ 
+    float: left;
+}
+
+.income-amount{
+    color: green;
+    font-size: 30px;
+    font-family: Roboto;
+    font-weight: 500;
+    margin-top: 10px;
+}
+
+.expense-container{
+
+    float: right;
+}
+
+.expense-amount{
+    color: rgb(200, 0, 0);
+    font-size: 30px;
+    font-family: Roboto;
+    font-weight: 500;
+    margin-top: 10px;
+}
+
+
+.balance-buttons-container{
+
+    position: relative;
+    height: 40px;
+    width: 83%;
+    margin-top: 205px;
+}
+
+.deposit-button{
+    float: left;
+    padding: 10px 50px;
+    font-family: Roboto;
+    font-size: 17px;
+    background-color: rgb(0, 100, 231);
+    border-style: none;
+    color: white;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.deposit-button:hover{
+    cursor: pointer;
+    background-color: rgb(0, 74, 172);
+}
+
+
+.withdraw-button{
+    float: right;
+    padding: 10px 50px;
+    font-family: Roboto;
+    font-size: 17px;
+    background-color: rgb(0, 100, 231);
+    border-style: none;
+    color: white;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+
+.withdraw-button:hover{
+    cursor: pointer;
+    background-color: rgb(0, 74, 172);
+}
+
+
+.finance-chart-container{
+    margin-top: 10px;
+  height: 485px;
+    width: 69%;
+   
+    float: right;
+}
+
+.finance-transactions-container{
+    top: 35px;
+    position: relative;
+
+    width: 100%;
+    height: 300px;
+    clear: both;
+    overflow-x: hidden;
+    flex-wrap: wrap-reverse;
+    
+}
+
+.finance-title{
+    font-family: Roboto;
+    font-size: 17px;
+}
+
+
+@media only screen and (max-width: 1760px) {
+
+    .finance-transactions-container{
+        top: 45px;
+        position: relative;
+    
+        width: 100%;
+        height: 230px;
+        clear: both;
+        overflow-x: hidden;
+        flex-wrap: wrap-reverse;
+        
+    }
+    .finance-chart-container{
+
+        width: 60%;
+    
+        height: 400px;
+        margin-right: 50px;
+    
+      
+    }
+
+    .balance-details{
+        float: left;
+        height: 300px;
+        width: 330px;
+        margin-top: 40px;
+        padding: 20px;
+        border: 1px solid rgba(0,0,0,0.6);
+        position: relative;
+    }
+
+    .withdraw-button{
+        float: right;
+        padding: 10px 30px;
+        font-family: Roboto;
+        font-size: 17px;
+        background-color: rgb(0, 100, 231);
+        border-style: none;
+        color: white;
+        border-radius: 5px;
+        transition: 0.3s;
+    }
+    .deposit-button{
+        float: left;
+        padding: 10px 30px;
+        font-family: Roboto;
+        font-size: 17px;
+        background-color: rgb(0, 100, 231);
+        border-style: none;
+        color: white;
+        border-radius: 5px;
+        transition: 0.3s;
+    }
+
+    
+.balance-buttons-container{
+
+    position: relative;
+    height: 40px;
+    width: 83%;
+    margin-top: 125px;
+}
+
+.income-expense-container{
+    position: relative;
+    background-color: red;
+    width: 75%;
+    margin-top: 25px;
+}
+
+
+
+}
+
+
+@media only screen and (max-width: 1150px){
+    .finance-chart-container{
+        margin-top: 10px;
+      height: 365px;
+        width: 50%;
+       
+        
+    }
+
+    .finance-transactions-container{
+        top: 0px;
+        position: relative;
+    
+        width: 100%;
+        height: 300px;
+        clear: both;
+        overflow-x: hidden;
+        flex-wrap: wrap-reverse;
+        
+    }
+
+    .balance-details{
+
+        height: 280px;
+
+  
+    }
+
+    .balance-buttons-container{
+
+        position: relative;
+        height: 40px;
+        width: 83%;
+        margin-top: 105px;
+    }
+    
+    .income-expense-container{
+        position: relative;
+        background-color: red;
+        width: 75%;
+        margin-top: 5px;
+    }
+}
+
+
+@media only screen and (max-width: 500px){
+
+    .balance-details{
+
+        height: 220px;
+        width: 85%;
+  
+    }
+
+    .balance-buttons-container{
+
+        position: relative;
+        height: 20px;
+        width: 83%;
+        margin-top: 75px;
+        
+    }
+
+
+    .withdraw-button{
+        float: right;
+        padding: 8px 15px;
+        font-family: Roboto;
+        font-size: 13px;
+        background-color: rgb(0, 100, 231);
+        border-style: none;
+        color: white;
+        border-radius: 5px;
+        transition: 0.3s;
+      
+    }
+    .deposit-button{
+        float: left;
+        padding: 8px 15px;
+        font-family: Roboto;
+        font-size: 13px;
+        background-color: rgb(0, 100, 231);
+        border-style: none;
+        color: white;
+        border-radius: 5px;
+        transition: 0.3s;
+     
+    }
+
+    .finance-container{
+        left: 15px;
+        
+
+    }
+
+    .finance-chart-container{
+        position: relative;
+        margin-top: 10px;
+      height: 365px;
+        width: 108%;
+        left: 65px;
+       
+        
+    }
+    
+    .finance-transactions-container{
+        top: 20px;
+        position: relative;
+    
+        left: 50%;
+        transform: translateX(-50%);
+      width: 200px;
+        
+    
+        
+    }
+    .income-amount{
+        color: green;
+        font-size: 20px;
+        font-family: Roboto;
+        font-weight: 500;
+        margin-top: 10px;
+    }
+    
+    .expense-container{
+    
+        float: right;
+    }
+    
+    .expense-amount{
+        color: rgb(200, 0, 0);
+        font-size: 20px;
+        font-family: Roboto;
+        font-weight: 500;
+        margin-top: 10px;
+    }
+
+
+    .total-balance-container{
+        margin-top: 20px;
+    }
+    .total-balance-amount{
+        font-size: 30px;
+        font-family:Roboto;
+        font-weight: bold;
+        color: #2f3640;
+    }
+
+   
+}
